@@ -97,7 +97,11 @@ class LandingPage extends Component {
 							<Form.Label>Enter a username we can associate you with for personalizing recommendations.</Form.Label>
 							<Form.Control as="textarea" rows={1} onChange={this.onValueChange} />
 						</Form.Group>
-					</Row>
+					<Row>
+						<Button variant = "primary" onClick={this.userSession}>
+								My Test Button
+						</Button>
+					</Row> 
 					<Row>
 						<Button variant="primary" size="md" className="footer-btn"
 							disabled={buttonDisabled && !this.state.loading}
