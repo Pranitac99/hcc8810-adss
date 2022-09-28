@@ -22,7 +22,7 @@ if __name__ == '__main__':
     items = trained_model.item_index_.to_numpy()
     # testing_path = 'testing_rating/rating_set.csv'
     # fullpath_test =  testing_path + liveUserID + '.csv'
-    fullpath_test = 'test_ratings/ratings_set.csv'
+    fullpath_test = 'ratings_set.csv'
     ratings_liveUser = pd.read_csv(fullpath_test, encoding='latin1')
     # print(ratings_liveUser)
         #['item', 'title', 'rating']
