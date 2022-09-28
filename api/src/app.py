@@ -107,7 +107,7 @@ def get_movies_for_user():
                                         gallerypage)
             survey_db.update_movies_seen(movies[lim:], userid, surveypageid,
                                         gallerypage+1)
-
+            movies['test'] = 'test'
         else:
             print('This page was already generated, don\'t need to rebuild.')
             movies = movie_db.get_movie_from_list(
